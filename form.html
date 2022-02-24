@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 4px;
+            background-color: #fdf6ee;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding: 2px;
+            font-size: 1.2em;
+        }
+
+        input {
+            padding: 6px;
+            margin: 8px 0px;
+        }
+
+        #btn {
+            background-color: #ff396a;
+            padding: 11px;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <div class="container">
+        <div>
+            <form action="/" class="form">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" value="enter first name">
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" value="enter last name">
+                <div id="gender">
+                    <label for="">Gender</label>
+                    <input type="radio" id="male" name="fav_language" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="fav_language" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="fav_language" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="pwd">Password:</label>
+                <input type="password">
+                <div>
+                    <label for="vehicle">Vehicle :</label>
+                    <div>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I have a boat</label>
+                    </div>
+                </div>
+                <label for="myfile">Upload Resume</label>
+                <input type="file" id="myfile" name="myfile"><br>
+                <input type="submit" id="btn">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
